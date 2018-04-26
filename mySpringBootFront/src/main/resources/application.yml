@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+    application:
+        name: my-boot-front
+eureka:
+  instance:
+    #eureka服务器的标识，如果是集群就可以写成 eurekaSer1,eurekaSer2,eurekaSer3..
+    hostname: my-eureka
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
